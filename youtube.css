@@ -1,0 +1,98 @@
+/*
+block-element->occupies whole area
+inline-block elemets-occupies needed space only
+inline elements
+*/
+p{
+    font-family: Roboto,Arial;
+    margin-top:0;
+    margin-bottom: 0;
+}
+
+.image{
+    width: 100%;
+}
+.author,.video-info{
+    vertical-align: top;
+    display: inline-block;
+}
+.noti-count{
+    position: absolute;
+    top: -2px;
+    right: -3px;
+    border-radius:10px;
+    font-size: 12px;
+    padding-left: 5px;
+    padding-right:5px;
+    padding-top: 1px;
+    padding-bottom: px;
+    color: rgb(245, 246, 247);
+    background-color: rgb(197, 6, 6);
+}
+.noti-container{
+position:relative;
+}
+.video-title{
+    margin-top: 0px;
+    font-size: 14px;
+    font-weight:600;
+    line-height:20px;
+    margin-bottom: 12px;
+}
+.channel{
+    border-radius: 100px;
+    width: 35px;
+    margin-right: 5px;
+}
+.video1-row{
+    margin-top: 4px;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+}
+.video-author{
+    color:rgb(96, 96, 96);
+    font-size:12px;
+    margin-bottom: 10px;
+}
+.video-stats{
+    color:rgb(96, 96, 96);
+    font-size:12px;
+}
+.out-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr  ;
+    column-gap: 15px;
+    row-gap: 35px;
+}
+@media(max-width:750px){
+    .out-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(min-width:751px) and (max-width:999px){
+.out-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+}
+@media(min-width:1000px){
+    .out-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+.video-time{
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 4px;
+    border-radius: 2px;
+    font-family: Roboto,Arial;
+    font-size: 12px;
+    padding-top:4px;
+    padding-bottom: 4px;
+    padding-left:4px ;
+    padding-right:4px;
+}
+.title-image{
+    position:relative
+}
